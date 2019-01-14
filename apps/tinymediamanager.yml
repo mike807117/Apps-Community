@@ -51,9 +51,8 @@
           GROUP_ID: 1000
           UMASK : 775
           KEEP_APP_RUNNING: 1
-          DISPLAY_WIDTH: 1408
-          DISPLAY_HEIGHT: 792
-          TZ: Europe/Copenhagen
+          DISPLAY_WIDTH: 1500
+          DISPLAY_HEIGHT: 780
 
 
     # MAIN DEPLOYMENT #############################################################
