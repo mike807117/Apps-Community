@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Title:      PlexGuide (Reference Title File)
-# Author(s):  Admin9705
+# Author(s):  mike807117
 # URL:        https://plexguide.com - http://github.plexguide.com
 # GNU:        General Public License v3.0
 ################################################################################
@@ -10,11 +10,12 @@
   gather_facts: false
   tasks:
     # FACTS #######################################################################
+    
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'tinymediamanager'
         intport: '5800'
-        extport: '5800'
+        extport: '28049'
         image: 'romancin/tinymediamanager:latest'
 
     # CORE (MANDATORY) ############################################################
@@ -22,6 +23,7 @@
       include_tasks: '/opt/plexguide/containers/_core.yml'
 
     # LABELS ######################################################################
+    
     - name: 'Adding Traefik'
       set_fact:
         pg_labels:
@@ -47,7 +49,7 @@
           PGID: 1000
           USER_ID: 1000
           GROUP_ID: 1000
-          UMASK : 777
+          UMASK : 775
           KEEP_APP_RUNNING: 1
           DISPLAY_WIDTH: 1408
           DISPLAY_HEIGHT: 792
@@ -69,4 +71,4 @@
             aliases:
               - '{{pgrole}}'
         state: started
-labels: '{{pg_labels}}'
+        labels: '{{pg_labels}}'
