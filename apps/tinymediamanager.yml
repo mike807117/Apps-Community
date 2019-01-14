@@ -53,6 +53,7 @@
           KEEP_APP_RUNNING: 1
           DISPLAY_WIDTH: 1408
           DISPLAY_HEIGHT: 792
+          TZ: Europe/Copenhagen
 
 
     # MAIN DEPLOYMENT #############################################################
