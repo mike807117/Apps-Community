@@ -15,7 +15,7 @@
       set_fact:
         pgrole: 'tinymediamanager'
         intport: '5800'
-        extport: '28049'
+        extport: '28048'
         image: 'romancin/tinymediamanager:latest'
 
     # CORE (MANDATORY) ############################################################
