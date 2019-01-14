@@ -48,8 +48,8 @@
           PUID: 1000
           PGID: 1000
           KEEP_APP_RUNNING: 1
-          DISPLAY_WIDTH: 1500
-          DISPLAY_HEIGHT: 780
+#          DISPLAY_WIDTH: 1500
+#          DISPLAY_HEIGHT: 780
 
 
     # MAIN DEPLOYMENT #############################################################
