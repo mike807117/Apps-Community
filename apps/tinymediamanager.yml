@@ -47,9 +47,6 @@
         pg_env:
           PUID: 1000
           PGID: 1000
-          USER_ID: 1000
-          GROUP_ID: 1000
-          UMASK : 775
           KEEP_APP_RUNNING: 1
           DISPLAY_WIDTH: 1500
           DISPLAY_HEIGHT: 780
