@@ -13,10 +13,10 @@
     
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'tinymediamanager'
+        pgrole: 'firefox'
         intport: '5815'
         extport: '5815'
-        image: 'jlesage/baseimage-gui:latest'
+        image: 'jlesage/firefox:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
